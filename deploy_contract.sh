@@ -38,4 +38,3 @@ SECRET=$(uuidgen)
 
 # Deploy the contract using Forge
 forge create --from $ACCOUNT_ADDRESS ./src/Vulnerable.sol:Hackme --constructor-args=$SECRET --unlocked
-

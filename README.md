@@ -27,7 +27,7 @@ If not, redeploy the contract on the Cancun blockchain network using
 Run the tests with the following command:
 
 ```shell
-forge test -vvvv --rpc-url=http://localhost:8545
+forge test -vvvv --fork-url=http://localhost:8545
 ```
 
 ## Solve the lab
@@ -49,7 +49,7 @@ Check the files
 
 - `./test/Exploit.t.sol` (forge exploit)
 
-Rerun the command `forge test -vvvv --rpc-url=http://localhost:8545` to check if the solution is correct.
+Rerun the command `forge test -vvvv --fork-url=http://localhost:8545` to check if the solution is correct.
 
 ## Hints
 

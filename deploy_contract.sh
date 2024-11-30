@@ -35,6 +35,5 @@ ACCOUNT_ADDRESS=$(grep -o '0x[0-9a-fA-F]\{40\}' anvil_output.log | head -1)
 PRIVATE_KEY=$(grep -o '0x[0-9a-fA-F]\{64\}' anvil_output.log | head -1)
 
 SECRET=$(uuidgen)
-
 # Deploy the contract using Forge
 forge create --from $ACCOUNT_ADDRESS ./src/Vulnerable.sol:Hackme --constructor-args=$SECRET --unlocked
